@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="292px" height="14px" viewBox="0 0 292 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>对称-分界线</title>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="画板" transform="translate(-98.000000, -173.000000)" fill="#FFFFFF">
+            <g id="编组-2备份" transform="translate(98.000000, 173.000000)">
+                <g id="编组" transform="translate(231.500000, 7.000000) scale(-1, 1) translate(-231.500000, -7.000000) translate(171.000000, 0.000000)">
+                    <polygon id="矩形" points="-3.91256472e-13 0 121 0 121 2 -3.91256472e-13 2"></polygon>
+                    <polygon id="矩形" points="76 4 121 4 121 5 76 5"></polygon>
+                    <polygon id="矩形" points="76 7 121 7 121 8 76 8"></polygon>
+                    <polygon id="矩形" points="76 10 121 10 121 11 76 11"></polygon>
+                    <polygon id="矩形" points="76 13 121 13 121 14 76 14"></polygon>
+                </g>
+                <g id="编组">
+                    <polygon id="矩形" points="-3.91256472e-13 0 121 0 121 2 -3.91256472e-13 2"></polygon>
+                    <polygon id="矩形" points="76 4 121 4 121 5 76 5"></polygon>
+                    <polygon id="矩形" points="76 7 121 7 121 8 76 8"></polygon>
+                    <polygon id="矩形" points="76 10 121 10 121 11 76 11"></polygon>
+                    <polygon id="矩形" points="76 13 121 13 121 14 76 14"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

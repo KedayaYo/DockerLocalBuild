@@ -1,0 +1,68 @@
+AppDebug: true
+APPIsPrivate: false
+IsUseNacos: false
+IsAutoUploadMedia: false
+
+RealTimeVideo:
+  VideoIsSoft: true # 实时视角是否用软件方案
+  SoftIsAliyun: true # 实时视角是否用的阿里云软推方案
+
+ProjectID: 'A07'
+
+LocalIP: '127.0.0.1'
+
+SocketioConfig:
+  Host: 'socketio' # 服务器本机IP地址
+  Port: ':8087' # 服务器本机暴漏端口
+  OutHost: '127.0.0.1' # 服务器外网访问地址
+  OutPort: ':8080' # 服务器外网访问端口
+
+MediaServerConfig: # 媒体服务配置信息
+  Host: 'media_server'
+  Port: ':8881'
+
+HttpServer:
+  Api:
+    Port: ':20219' #api接口端口
+    OutHost: 'api.skysys.cn' # 服务器外网访问地址
+    OutPort: ':18080' # 服务器外网访问端口
+
+Logs:
+  GinLogName: '/storage/logs/gin.log' #设置 gin 框架的接口访问日志
+  GoQiCloudLogName: '/storage/logs/qiclouds.log' #设置GoSkeleton项目骨架运行时日志文件名，注意该名称不要与上一条重复 ,避免和 gin 框架的日志掺杂一起，造成混乱。
+  TextFormat: 'console' #记录日志的格式，参数选项：console、json ， console 表示一般的文本格式
+  TimePrecision: 'millisecond' #记录日志时，相关的时间精度，该参数选项：second  、 millisecond ， 分别表示 秒 和 毫秒 ,默认为毫秒级别
+  MaxSize: 10 #每个日志的最大尺寸(以MB为单位）， 超过该值，系统将会自动进行切割
+  MaxBackups: 7 #保留旧日志最大个数
+  MaxAge: 15 #保留旧日志最大天数r
+  Compress: false #日志备份时，是否进行压缩
+
+MqttServer:
+  EndPoint: 'emqx'
+  Port: 1883
+  UserName: 'root'
+  Password: 'emqx_1883'
+  GroupID: 'GID_Console'
+  DeviceGroupID: 'GID_DYDevice'
+  ClientID: 'Server_qicloud_bai_docker'
+
+Redis:
+  Host: 'redis'
+  Port: 6379
+  Auth: 'redis_6379'
+  MaxIdle: 100
+  MaxActive: 1000
+  IdleTimeout: 60
+  IndexDb: 8
+  ConnFailRetryTimes: 3 #从连接池获取连接失败，最大重试次数
+  ReConnectInterval: 1 # 从连接池获取连接失败，每次重试之间间隔的秒数
+
+
+DeviceStrategy: # 设备策略
+  UAVIsCheckCharge: true
+
+Minio:
+  Host: "minio"
+  Port: "9000"
+  AccessKeyID: "ohzjSQDdUyGV5wRflNct"
+  SecretAccessKey: "9OGuwrwhNIOooP06DiM9Ym6Eq0RmFQXXNa0fizw2"

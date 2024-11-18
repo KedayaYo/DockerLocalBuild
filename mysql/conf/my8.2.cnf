@@ -1,0 +1,95 @@
+[mysql]
+#设置mysql客户端默认字符集
+default-character-set=utf8
+
+[client]
+default-character-set=utf8
+
+
+[mysqld]
+# 设置 MySQL 服务运行的端口号
+port = 3306
+# 指定 MySQL 数据库的默认字符集
+character-set-server=utf8
+collation-server=utf8_general_ci
+
+# 设置 MySQL 执行中断的超时时间
+interactive_timeout = 28800
+wait_timeout = 28800
+# 设置 MySQL 数据库的缓存大小
+key_buffer_size = 16M
+# 允许外部访问
+bind-address=0.0.0.0
+# 设置 MySQL 日志级别
+log-error=/var/log/mysql/error.log
+log_queries_not_using_indexes = 1
+slow_query_log = 1
+slow_query_log_file = /var/log/mysql/slow.log
+long_query_time = 1
+
+# 设置 MySQL 允许访问的最大连接数
+max_connections = 1000
+
+#允许连接失败的次数
+max_connect_errors=10
+
+#默认使用“mysql_native_password”插件认证
+authentication_policy=mysql_native_password
+
+#是否对sql语句大小写敏感，1表示不敏感
+lower_case_table_names=1
+
+#SQL数据包发送的大小，如果有BLOB对象建议修改成1G
+max_allowed_packet=256M
+
+#开启查询缓存
+explicit_defaults_for_timestamp=true
+
+#创建新表时将使用的默认存储引擎
+default_storage_engine=INNODB
+
+#等待超时时间秒
+wait_timeout=60
+
+default-time-zone='+08:00'
+
+#交互式连接超时时间秒
+interactive_timeout=28800
+
+#服务器默认字符集
+character_set_server=utf8
+
+#服务器的默认排序规则
+collation_server=utf8_unicode_ci
+
+#服务器为每个连接的客户端执行的字符串
+init_connect='SET NAMES utf8mb4'
+
+#运行错误日志
+log_error=/var/log/mysql/mysqld_error.log
+
+#是否开启慢查询
+slow_query_log=1
+
+#慢查询执行的秒数，必须达到此值可被记录
+long_query_time=8
+
+#检索的行数必须达到此值才可被记为慢查询
+min_examined_row_limit=100
+
+#慢查询sql日志文件
+slow_query_log_file=/var/log/mysql/mysqld_slow.log
+
+#检查未使用到索引的sql
+#log_queries_not_using_indexes=1
+
+#针对log_queries_not_using_indexes开启后，记录慢sql的频次、每分钟记录的条数
+#log_throttle_queries_not_using_indexes=5
+
+skip_name_resolve=OFF
+
+character-set-client-handshake=false
+
+#wait_timeout=28800
+
+#sql_mode='STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION';
