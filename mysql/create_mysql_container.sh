@@ -2,7 +2,7 @@
 
 # 清除原容器信息
 CONTAINER_NAME="mysql_server" # 容器名称/服务名
-IMAGE_TAG="mysql:8"      # 镜像标签
+IMAGE_TAG="mysql:8.2.0"      # 镜像标签
 LOG_DIR="$(pwd)/logs"         # 日志文件目录
 DATA_DIR="$(pwd)/data"        # 数据文件目录
 CONF_DIR="$(pwd)/conf"        # 配置文件目录
